@@ -1,0 +1,61 @@
+<app-navbar></app-navbar>
+<body>
+
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3>User Dashboard</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+            <li class="active">
+                <a [routerLink]="'/normal/dashboard'" >My Surveys</a>
+            </li>
+            <li>
+                <a [routerLink]="'/normal/getUsers'">User Info</a>
+            </li>
+            
+        </ul>
+
+        
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+
+
+
+    <div class="container mt-0 mb-0">
+        <div class="row">
+            
+            <!-- <div ngIf="" ><h1>No data to show</h1></div> -->
+            <div  class="col-md-4" *ngFor="let aboutSurvey of aboutSurveys;">
+                <div id="f1" class="card mt-4 p-3 mb-2">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="icon"> <i class="bx bxl-reddit"></i> </div>
+                            <div class="ms-2 c-details">
+                                <h6 class="mb-0">{{aboutSurvey.userEmail}}</h6> <span>{{aboutSurvey.surveyDate}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <h2 class="heading">{{aboutSurvey.surveyTitle}}<br><div style="font-size:14px;">{{aboutSurvey.surveyDescription}}</div></h2>
+                        <div class="mt-5">
+                            <!-- <a [routerLink]="'/user/dashboard/surveyresult/'+aboutSurvey.surveyId" class="btn btn-primary">Show
+                                Result</a> -->
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+
+    </div>
+</div>
+</body>

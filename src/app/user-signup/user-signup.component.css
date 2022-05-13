@@ -1,0 +1,10 @@
+body{
+    background-image: linear-gradient(to left, #2a1c24, #3a2c38, #493e4e, #575164, #64657b, #6a7388, #718094, #798ea0, #8097a4, #8aa0a7, #96a9ab, #a3b1b0);
+    /* height: 100%;
+    width: 100%;
+    mask-repeat:inherit; */
+    background-size: cover;
+}
+.container h-100{
+    background-image: linear-gradient(to left, #2a1c24, #3a2c38, #493e4e, #575164, #64657b, #6a7388, #718094, #798ea0, #8097a4, #8aa0a7, #96a9ab, #a3b1b0);
+}

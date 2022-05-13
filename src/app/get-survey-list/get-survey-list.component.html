@@ -1,0 +1,24 @@
+<div class="container">
+<p>get-survey-list works!</p>
+<table class="table">
+    <thead>
+    <tr>
+    <th scope="col">surveyId</th>
+    <th scope="col">surveyTitle</th>
+    <th scope="col">surveyDate</th>
+    <th scope="col">surveyDescription</th>
+    <th scope="col">expireStatus</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let survey of surveys">
+    <th scope="row">{{survey.surveyId}}</th>
+    <td>{{survey.surveyTitle}}</td>
+    <td>{{survey.surveyDate}}</td>
+    <td>{{survey.surveyDescription}}</td>
+    <td>{{survey.expireStatus}}</td>
+    </tr>
+    </tbody>
+    </table><p>get-survey-list works!</p>
+
+</div>

@@ -1,0 +1,30 @@
+<div style="max-width: 100%;">
+    <nav style="max-width: 100%">
+        <div class='nav-container' style="max-width: 800px;">
+          
+    <a class="nav-link" [routerLink]="'/profile'"><h2 class="heading"><img src="../../assets/monitoring (1).png"></h2></a>
+    
+    <ul class='nav-menu'>
+    <li><a [routerLink]="''" *ngIf="!isLoggedIn">Home</a></li>
+    <li><a [routerLink]="'/admin'" *ngIf="isLoggedIn">Home</a></li>
+    <li><a [routerLink]="'/admin/createsurvey'" *ngIf="isLoggedIn">Create Survey</a></li>
+    <!-- *ngIf="isLoggedIn" -->
+    <li><a href="/contact">Contact</a></li>
+    </ul>
+    
+    <ul class="nav-menu signup">
+    <li [routerLink]="'/login'" *ngIf="!isLoggedIn">Login </li>
+    <li [routerLink]="'/signup'" *ngIf="!isLoggedIn">Sign-up </li>
+    <li *ngIf="isLoggedIn" (click)="logout()" >Logout </li>
+    </ul>
+    <!-- <ul class="nav-menu signup">
+        <li *ngIf="isLoggedIn" (click)="logout()" >Logout </li>
+    
+    </ul> -->
+    
+    
+    
+    
+        </div>
+    </nav>
+    </div>

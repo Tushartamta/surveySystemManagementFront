@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<body>
+<main>
+  
+    <div >
+       
+        
+         <form id="survey-form" action="" (ngSubmit)="formSubmit()">
+           <fieldset>
+             <label id="name-label">Question Title</label>
+             <input [(ngModel)]="survey.questionTitle" name="questionTitle" placeholder="Enter your Question Title" type="text" required/>
+             <label id="email-label">Question Description</label>
+             <textarea [(ngModel)]="survey.questionDescription" name="questionDescription" placeholder="Enter your Description here..."></textarea>
+               <input id="submit" type="submit"  value="Create Question">
+             </fieldset>
+           
+         </form>
+         <button (click)="reloadCurrentPage()" [routerLink]="'/user/createsurvey/createsurveyquestion/'+surveyQuestion.surveyId" class="btn btn-primary btn-block mb-3">Add New Question</button>
+      
+     </div>
+   
+   </main>
+  </body>
